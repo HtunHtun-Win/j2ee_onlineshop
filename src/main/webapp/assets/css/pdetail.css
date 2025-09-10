@@ -1,0 +1,286 @@
+/* Reset default styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+/* Container Layout */
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+/* Right Side Layout */
+.main-layout {
+	margin-left: 220px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 100vh;
+}
+
+/* Cart and User Profile */
+.cart_role {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+/* Content Header */
+.content-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.product-detail-card {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 24px;
+	border-radius: 16px;
+	background-color: #ffffff;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+	font-family: Arial, sans-serif;
+}
+
+/* Flex for Add button */
+.detail_flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.addbtn {
+	background-color: #f07167;
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: 0px;
+	cursor: pointer;
+	margin: 0;
+	font-size: 1rem;
+	transition: background-color 0.2s ease;
+}
+
+.addbtn:hover {
+	background-color: #f07167;
+}
+
+/* Product detail section */
+.pdetail {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+/* Product image */
+.product-img {
+	width: 280px;
+	height: auto;
+	border-radius: 12px;
+	object-fit: cover;
+	/*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Table styling */
+.pdetail_table {
+	border-collapse: collapse;
+	width: calc(100% - 300px);
+	max-width: 450px;
+	font-size: 1rem;
+}
+
+.pdetail_table td {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	vertical-align: top;
+	color: #333;
+}
+
+.pdetail_table td:first-child {
+	font-weight: bold;
+	color: #555;
+	width: 140px;
+}
+
+.back-btn {
+	background-color: #ed333b;
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	margin: 0;
+	font-size: 1rem;
+	transition: background-color 0.2s ease;
+}
+
+.back-btn:hover {
+	background-color: #e01b24;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a * {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.cart-container {
+	position: relative;
+	display: inline-block;
+}
+
+.cart-badge {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	background-color: red;
+	color: white;
+	font-size: 12px;
+	padding: 2px 6px;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.quantity-wrapper {
+	display: inline-flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.quantity-wrapper button {
+	background-color: white;
+	border: none;
+	padding: 8px 12px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: backgrrgb(191, 38, 38) 2s;
+}
+
+.quantity-wrapper button:hover {
+	background-color: #e0e0e0;
+}
+
+.quantity-wrapper input {
+	width: 50px;
+	text-align: center;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+/* ================= Review Section ================= */
+.reviews {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f07167;
+  padding-bottom: 5px;
+}
+
+.review-card {
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.review-card p {
+  margin: 5px 0;
+  color: #444;
+}
+
+.review-card strong {
+  color: #222;
+}
+
+.review-card small {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+/* Stars */
+.review-card .stars {
+  color: #fbc02d; /* Gold color for stars */
+  margin-left: 5px;
+}
+
+/* ================= Add Review Form ================= */
+.add-review {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.add-review h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.add-review label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.add-review select,
+.add-review textarea {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.add-review textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.add-review button {
+  background: #f07167;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.add-review button:hover {
+  background: #e65c50;
+}
+
+.fa-star {
+  color: #ccc;
+}
+
+.fa-star.checked {
+  color: #fbc02d;
+}

@@ -1,0 +1,139 @@
+/* Reset default styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+/* Container Layout */
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+/* Right Side Layout */
+.main-layout {
+	margin-left: 220px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 100vh;
+}
+
+/* Cart and User Profile */
+.cart_role {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+/* Content Header */
+.content-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.voucher-container {
+	width: 21cm;
+	min-height: 29.7cm;
+	margin: 1cm auto;
+	padding: 1cm;
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	font-family: Arial, sans-serif;
+}
+
+.voucher-header {
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.voucher-header h2 {
+	margin: 0;
+}
+
+.voucher-info p {
+	margin: 4px 0;
+}
+
+.voucher-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.voucher-table th, .voucher-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+.voucher-footer {
+	margin-top: 20px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.print-btn {
+	margin: 20px auto;
+	display: block;
+	padding: 10px 20px;
+	background-color: #f07167;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button {
+	background-color: #f07167;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #f07167;
+}
+
+.proof-img{
+	max-width: 800px; 	
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a * {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+@media print {
+	.no-print, .print-btn {
+		display: none !important;
+	}
+	body * {
+		visibility: hidden;
+	}
+	.voucher-container, .voucher-container * {
+		visibility: visible;
+	}
+	.voucher-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.print-btn {
+		display: none;
+	}
+}

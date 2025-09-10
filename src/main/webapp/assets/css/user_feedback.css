@@ -1,0 +1,83 @@
+/* Reset default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Right Side Layout */
+.main-layout {
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
+
+/* Cart and User Profile */
+.cart_role {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Content Header */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.filter-form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-form input, .filter-section button {
+	padding: 8px;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.filter-form button {
+	background-color: #ff7d00;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.feedback-table th, .feedback-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.feedback-table th {
+    background-color: #fdfcdc;
+    text-align: left;
+}
+
+a{
+	text-decoration: none;
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    background : #ff7d00;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #0081a7;
+    background-color: #ff7d00;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.shopname {
+	color: #ff7d00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.shopname h1 {
+    color: #ff7d00;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    background : white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #FFA500;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-left : 20px;
+    margin-right : 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #deddda;
+    border-radius: 10px;
+}
+
+/* Cart and User Profile */
+.cart_role {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 2px solid white;
+}
+
+.user-profile span {
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #e6f5f9;
+ /*   background-color: #fed9b7; */
+    overflow-y: auto;
+}
+
+footer{
+	display: none;
+}
+
+/* Footer */
+footer {
+    /*background: linear-gradient(135deg, #2575fc, #6a11cb);*/
+    background : #00afb9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a * {
+  text-decoration: none !important;
+  color: inherit !important;
+}

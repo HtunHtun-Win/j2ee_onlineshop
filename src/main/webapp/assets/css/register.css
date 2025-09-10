@@ -1,0 +1,78 @@
+/* Reset default styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.shopname {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.register-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #c43436;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #035fc1;
+}
+
+.back-btn:hover {
+    background-color: #a12d2e;
+}

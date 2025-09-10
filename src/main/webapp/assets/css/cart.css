@@ -1,0 +1,118 @@
+/* Reset default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+
+/* Right Side Layout */
+.main-layout {
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
+
+/* Cart and User Profile */
+.cart_role {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Content Header */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.itemgp {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.itemgp img {
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.mytable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.mytable td {
+	padding: 12px;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+.mytable th{
+	font-size : 18px;
+	padding: 12px;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+.chQty {
+	width: 50px;
+	padding: 6px;
+	text-align: center;
+}
+
+.delbtn,
+.paidbtn {
+	width : 100px;
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 6px;
+	background-color: #f44336;
+	color: white;
+}
+
+.paidbtn {
+	background-color: #ff7d00;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a * {
+	text-decoration: none !important;
+	color: inherit !important;
+}

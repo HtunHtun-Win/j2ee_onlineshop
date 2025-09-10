@@ -1,0 +1,118 @@
+/* Reset default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Right Side Layout */
+.main-layout {
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
+
+/* Cart and User Profile */
+.cart_role {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Content Header */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Profile Container */
+.profile-container {
+    background: #fdfcdc;
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.profile-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.modal-content input {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+}
+.cancel-btn {
+    background-color: #888;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a * {
+  text-decoration: none !important;
+  color: inherit !important;
+}

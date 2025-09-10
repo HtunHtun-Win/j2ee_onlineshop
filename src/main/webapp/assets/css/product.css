@@ -1,0 +1,450 @@
+/* Reset default styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+/* Container Layout */
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+
+/* Right Side Layout */
+.main-layout {
+	margin-left: 220px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 100vh;
+}
+
+/* Cart and User Profile */
+.cart_role {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+/* Content Header */
+.content-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+/* search form */
+.searchForm {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.searchForm input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.searchForm input:focus {
+    border-color: orange;
+    box-shadow: 0 0 5px orange;
+}
+
+.searchForm button {
+    padding: 10px 15px;
+    border: none;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.searchForm button:hover {
+    background: darkorange;
+}
+
+/* Dropdown */
+.dropdown {
+	position: relative;
+}
+
+.add-btn{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #ff7d00;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.add-btn:hover {
+    transform: scale(1.05);
+}
+
+.add-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.dropbtn {
+    background: orange;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;          /* fixed width */
+    text-align: center;    /* center text */
+    box-sizing: border-box;
+    white-space: nowrap;   /* prevent wrapping */
+}
+
+.dropdown-content {
+    width: 180px; /* fixed width */
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    width: 100%;     /* makes links fit full width */
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+/* Grid for items */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Item Card */
+.item-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Item Image */
+.item-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Item Info */
+.item-info {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Product Name - max 3 lines */
+.item-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+/* Mini Info: SKU, Price, Qty */
+.mini-info {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 10px;
+    gap: 2px;
+}
+
+.mini-info p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.mini-info .price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Card actions */
+.card-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+
+.card-actions button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .item-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    .item-card img {
+        height: 120px;
+    }
+}
+
+
+.dialog {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+	background-color: #fff;
+	margin: 10% auto;
+	padding: 20px;
+	border-radius: 10px;
+	width: 400px;
+	position: relative;
+}
+
+.dialog-content input, .dialog-content textarea, .dialog-content select
+	{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.close {
+	color: #aaa;
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a * {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+.dialog {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.dialog-content {
+  background: linear-gradient(135deg, #ffffff, #f9f9ff);
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.dialog-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dialog-content label {
+  font-weight: 500;
+  margin-top: 14px;
+  display: block;
+  color: #333;
+}
+
+.dialog-content input,
+.dialog-content textarea,
+.dialog-content select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 2px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.dialog-content input:focus,
+.dialog-content textarea:focus,
+.dialog-content select:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: #333;
+}
+
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form-col {
+  flex: 1 1 45%;
+  min-width: 200px;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .form-col {
+    flex: 1 1 100%;
+  }
+}
